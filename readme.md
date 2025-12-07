@@ -55,7 +55,7 @@ conf.set('PORT', 3000);
 Mengambil nilai dari store.
 
 ```js
-conf.get('PORT'); // 3000
+console.log(conf.get('PORT')); // 3000
 ```
 
 ## `has(key)`
@@ -63,7 +63,7 @@ conf.get('PORT'); // 3000
 Cek apakah key tersedia.
 
 ```js
-conf.has('PORT'); // true
+console.log(conf.has('PORT')); // true
 ```
 
 ## `delete(key)`
@@ -98,7 +98,7 @@ conf.clear();
 Mengambil seluruh konfigurasi dalam bentuk object baru (immutable).
 
 ```js
-const all = conf.all();
+console.log(conf.all());
 ```
 
 # Membaca File `.env`
@@ -120,9 +120,9 @@ NAME="Node App"
 import conf from 'node-configify';
 conf.config(); // otomatis membaca .env
 
-conf.get('API_KEY');
+console.log(conf.get('API_KEY'));
 // atau
-process.env.NAME;
+console.log(process.env.NAME);
 ```
 
 ## Cara Kerja Loader `.env`
