@@ -40,9 +40,9 @@ console.log(conf.has('APP_NAME')); // true
 console.log(conf.all());
 ```
 
-# API
+## API
 
-## `set(key, value)`
+### `set(key, value)`
 
 Menambah atau memperbarui parameter konfigurasi.
 
@@ -50,7 +50,7 @@ Menambah atau memperbarui parameter konfigurasi.
 conf.set('PORT', 3000);
 ```
 
-## `get(key)`
+### `get(key)`
 
 Mengambil nilai dari store.
 
@@ -58,7 +58,7 @@ Mengambil nilai dari store.
 console.log(conf.get('PORT')); // 3000
 ```
 
-## `has(key)`
+### `has(key)`
 
 Cek apakah key tersedia.
 
@@ -66,7 +66,7 @@ Cek apakah key tersedia.
 console.log(conf.has('PORT')); // true
 ```
 
-## `delete(key)`
+### `delete(key)`
 
 Menghapus parameter tertentu.
 
@@ -74,7 +74,7 @@ Menghapus parameter tertentu.
 conf.delete('PORT');
 ```
 
-## `merge(object)`
+### `merge(object)`
 
 Menggabungkan objek konfigurasi.
 
@@ -85,7 +85,7 @@ conf.merge({
 });
 ```
 
-## `clear()`
+### `clear()`
 
 Reset seluruh konfigurasi.
 
@@ -93,7 +93,7 @@ Reset seluruh konfigurasi.
 conf.clear();
 ```
 
-## `all()`
+### `all()`
 
 Mengambil seluruh konfigurasi dalam bentuk object baru (immutable).
 
@@ -101,20 +101,16 @@ Mengambil seluruh konfigurasi dalam bentuk object baru (immutable).
 console.log(conf.all());
 ```
 
-# Membaca File `.env`
+## Membaca File `.env`
 
 `node-configify` menyediakan fungsi mirip `dotenv` tanpa dependensi besar.
 
-## `conf(filepath = '.env', options)`
-
-### Contoh `.env`
+### `conf(filepath = '.env', options)`
 
 ```sh
 API_KEY=12345
 NAME="Node App"
 ```
-
-### Penggunaan
 
 ```js
 import conf from 'node-configify';
