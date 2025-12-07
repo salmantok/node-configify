@@ -1,45 +1,45 @@
 {
-  "name": "node-configify",
-  "version": "0.0.2",
-  "description": "Utilitas konfigurasi Node.js",
-  "exports": {
-    "require": "./dist/cjs/index.js",
-    "import": "./dist/esm/index.js"
-  },
-  "files": [
-    "./dist/"
-  ],
-  "type": "module",
-  "scripts": {
-    "format": "prettier -w .",
-    "build": "besmin lib dist esm cjs",
-    "dev": "pnpm format && pnpm build"
-  },
-  "keywords": [
-    "node-configify",
-    "node-config",
-    "configify",
-    "config",
-    "configuration",
-    "config-manager",
-    "env",
-    ".env",
-    "dotenv",
-    "env-loader",
-    "env-parser",
-    "environment-variables",
-    "parameter-store",
-    "settings",
-    "config-loader",
-    "nodejs",
-    "nodejs-config",
-    "lightweight-config",
-    "simple-config",
-    "config-utility"
-  ],
-  "author": "Salman <salmantok.dev@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "nodefs-lite": "^0.1.6"
-  }
+    "name": "node-configify",
+    "version": "0.0.2",
+    "description": "Utilitas konfigurasi Node.js",
+    "exports": {
+        "require": "./dist/cjs/index.js",
+        "import": "./dist/esm/index.js"
+    },
+    "files": [
+        "./dist/"
+    ],
+    "type": "module",
+    "scripts": {
+        "format": "prettier -w .",
+        "build": "besmin lib dist esm cjs",
+        "dev": "pnpm format && pnpm build"
+    },
+    "keywords": [
+        "node-configify",
+        "node-config",
+        "configify",
+        "config",
+        "configuration",
+        "config-manager",
+        "env",
+        ".env",
+        "dotenv",
+        "env-loader",
+        "env-parser",
+        "environment-variables",
+        "parameter-store",
+        "settings",
+        "config-loader",
+        "nodejs",
+        "nodejs-config",
+        "lightweight-config",
+        "simple-config",
+        "config-utility"
+    ],
+    "author": "Salman <salmantok.dev@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "nodefs-lite": "^0.1.6"
+    }
 }

@@ -27,16 +27,16 @@ npm install node-configify
 ```js
 import conf from 'node-configify';
 
-// Set parameter
+// Set konfigurasi
 conf.set('APP_NAME', 'MyApp');
 
-// Ambil parameter
+// Ambil konfigurasi
 console.log(conf.get('APP_NAME')); // "MyApp"
 
 // Cek key
 console.log(conf.has('APP_NAME')); // true
 
-// Dapatkan semua parameter
+// Dapatkan semua konfigurasi
 console.log(conf.all());
 ```
 
